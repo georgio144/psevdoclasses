@@ -81,3 +81,107 @@ h6 {
    font-size: inherit;
    font-weight: 400;
 }
+
+body {
+   padding: 30px;
+}
+.block {
+   margin: 0 0 30px 0;
+}
+
+.block p {
+   font-size: 18px;
+   line-height: 24px;
+   margin: 0 0 20px 0;
+}
+
+.block p:nth-child(1){
+   background-color: lawngreen;
+}
+
+.block p:nth-child(2){
+   background-color: red;
+}
+
+.block p:nth-child(3){
+   background-color: indigo;
+}
+
+.block p:nth-child(3):hover{
+   background-color: yellow;
+}
+
+
+.link {
+   color: red;
+}
+
+.link:visited {
+   color: green;
+}
+/*:visired должно располагаться над :hover для более лучшего отображения*/
+
+.link:hover {
+   text-decoration: underline;
+   color: blue;
+}
+
+.link:active{
+   color: yellow;
+}
+
+
+.textinput {
+   border: 1px solid grey;
+   height: 50px;
+   padding: 0 15px;
+   font-size: 18px;
+   width: 300px;
+   margin: 0 0 10px 0;
+}
+
+.textinput:focus{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.textbutton {
+   display: block;
+   width: 300px;
+   height: 50px;
+   background-color: grey;
+   font-size: 18px;
+   color: #fff;
+   text-transform: uppercase;
+   margin: 0 0 30px 0;
+}
+
+.textbutton:hover{
+   background-color: indigo;
+   color:yellow;
+}
+
+.textbutton:active{
+   background-color: #eee;
+}
+
+.list {
+}
+
+.list li {
+   font-size: 18px;
+   margin: 0 0 15px 0;
+}
+
+.list li:first-child{
+   color: green;
+   text-transform: uppercase;
+}
+
+.list li:last-child{
+   color: red;
+}
+
+.list li:nth-child(3){
+   text-decoration: underline;
+   color: indigo;
+}
